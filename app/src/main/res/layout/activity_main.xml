@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:padding="20dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:padding="10dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:text="دیتابیس روم"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:paddingVertical="10dp"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="دیتابیس روم در جاوا"
+        android:id="@+id/btn_java"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:paddingVertical="10dp"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="دیتابیس روم در کاتلین"
+        android:id="@+id/btn_kotlin"/>
+
+</LinearLayout>
