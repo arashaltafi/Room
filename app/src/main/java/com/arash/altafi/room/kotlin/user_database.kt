@@ -17,7 +17,9 @@ abstract class user_database:RoomDatabase() {
             {
                 synchronized(user_database::class)
                 {
-                    userDatabase = Room.databaseBuilder(context , user_database::class.java , "db_user_kotlin").allowMainThreadQueries().build()
+                    userDatabase = Room.databaseBuilder(context , user_database::class.java , "db_user_kotlin")
+//                        .createFromAsset("database/myapp.db")  // For db first
+                        .allowMainThreadQueries().build()
                 }
             }
             return userDatabase
