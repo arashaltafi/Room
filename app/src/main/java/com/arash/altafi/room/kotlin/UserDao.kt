@@ -3,18 +3,18 @@ package com.arash.altafi.room.kotlin
 import androidx.room.*
 
 @Dao
-interface user_dao {
+interface UserDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insert(userModel: user_model)
+    fun insert(userModel: UserModel)
 
     @Query("SELECT * FROM tbl_user_kotlin")
-    fun getAll() : List<user_model>
+    fun getAll(): List<UserModel>
 
     @Delete
-    fun delete(userModel: user_model)
+    fun delete(userModel: UserModel)
 
     @Update
-    fun update(userModel: user_model)
+    fun update(userModel: UserModel)
 
 }

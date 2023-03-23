@@ -5,8 +5,7 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "tbl_user")
-public class user_model {
-
+public class userModel {
     @PrimaryKey(autoGenerate = true)
     int id;
     @ColumnInfo(name = "user_name")
@@ -15,5 +14,4 @@ public class user_model {
     String family;
     @ColumnInfo(name = "user_age")
     int age;
-
 }
