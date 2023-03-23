@@ -10,11 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Room">
         <activity
-            android:exported="true"
-            android:name=".kotlin.kotlin_main"/>
+            android:name=".kotlin.kotlin_main"
+            android:exported="true" />
         <activity
             android:name=".java.java_main"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

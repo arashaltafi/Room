@@ -1,41 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:gravity="center"
-    android:layout_gravity="center"
-    android:padding="20dp"
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
     <TextView
-        android:padding="10dp"
-        android:background="@color/black"
-        android:textColor="@color/white"
-        android:textSize="50sp"
-        android:text="دیتابیس روم"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:padding="10dp"
+        android:text="Room DataBase"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
 
     <com.google.android.material.button.MaterialButton
-        android:paddingVertical="10dp"
-        android:textSize="20sp"
-        android:layout_marginTop="50dp"
+        android:id="@+id/btnJava"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="دیتابیس روم در جاوا"
-        android:id="@+id/btn_java"/>
+        android:layout_marginTop="50dp"
+        android:paddingVertical="10dp"
+        android:text="Sample in Java"
+        android:textSize="16sp" />
 
     <com.google.android.material.button.MaterialButton
-        android:paddingVertical="10dp"
-        android:textSize="20sp"
-        android:layout_marginTop="50dp"
+        android:id="@+id/btnKotlin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="دیتابیس روم در کاتلین"
-        android:id="@+id/btn_kotlin"/>
+        android:layout_marginTop="50dp"
+        android:paddingVertical="10dp"
+        android:text="Sample in Kotlin"
+        android:textSize="16sp" />
 
 </LinearLayout>

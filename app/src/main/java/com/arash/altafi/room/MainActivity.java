@@ -12,7 +12,7 @@ import com.google.android.material.button.MaterialButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    MaterialButton btn_java , btn_kotlin;
+    MaterialButton btn_java, btn_kotlin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,13 +24,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void FindView() {
-        btn_java = findViewById(R.id.btn_java);
-        btn_kotlin = findViewById(R.id.btn_kotlin);
+        btn_java = findViewById(R.id.btnJava);
+        btn_kotlin = findViewById(R.id.btnKotlin);
     }
 
     private void Listener() {
-        btn_java.setOnClickListener(view -> startActivity(new Intent(MainActivity.this , java_main.class)));
-        btn_kotlin.setOnClickListener(view -> startActivity(new Intent(MainActivity.this , kotlin_main.class)));
+        btn_java.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, java_main.class)));
+        btn_kotlin.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, kotlin_main.class)));
     }
 
 }
