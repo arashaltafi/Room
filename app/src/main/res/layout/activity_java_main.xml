@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
 
     <com.google.android.material.button.MaterialButton
-        android:text="ذخیره"
         android:id="@+id/btn_save"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="save" />
 
     <com.google.android.material.button.MaterialButton
-        android:text="نمایش"
         android:id="@+id/btn_show"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="show" />
 
     <com.google.android.material.button.MaterialButton
-        android:text="آپدیت"
         android:id="@+id/btn_update"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="update" />
 
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="4dp"
-        android:hint="نام :">
+        android:hint="Name :">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_Name"
             android:layout_width="match_parent"
@@ -42,7 +42,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="4dp"
-        android:hint="نام خانوادگی :">
+        android:hint="LastName :">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_Family"
             android:layout_width="match_parent"
@@ -54,16 +55,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="4dp"
-        android:hint="سن :">
+        android:hint="Age :">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_Age"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recy_user"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/recy_user"/>
+        tools:itemCount="2"
+        tools:listitem="@layout/item_user" />
 
-</LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
